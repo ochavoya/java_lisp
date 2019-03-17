@@ -231,6 +231,7 @@ public class Interpreter implements Serializable
 
 	private final Function<Symbol, Symbol> processClear             = (symbol) -> {
 		                                                                symbolTable = new HashMap<String, Symbol>();
+		                                                                functionTable = new HashMap<String, Lambda>();
 		                                                                return Symbol.TRUE;
 	                                                                };
 
